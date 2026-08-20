@@ -1,9 +1,9 @@
 DEBUG DETAILED_TIMERS
-MOLINFO STRUCTURE=step3_input.pdb  # PDBファイルを指定
+MOLINFO STRUCTURE=step3_input.pdb  # specify the PDB file
 WHOLEMOLECULES ENTITY0=1-447
 #WHOLEMOLECULES ENTITY0=1-355 ENTITY1=356-676
 
-# 水素結合を弱める補正を追加
+# add a correction that weakens hydrogen bonds
 
 ####################################################################################################
 ## gHBfix RESTRAINT SECTION
@@ -14,13 +14,13 @@ gh: GHBFIX PAIR GROUPA=19,22,23,31,53,56,57,65,86,87,96,371,374,375,383,404,405,
 BIASVALUE ARG=gh
 PRINT FILE=output ARG=gh
 
-#PARAMS=scalingParameters.dat  # 正しいパラメータファイルを指定
-#D_0=0.25                  # 補正エネルギーが最大となる距離
-#D_MAX=0.35                # 補正エネルギーがゼロになる距離
-#C=1.0                     # 補正ポテンシャルのスケールファクター
-#TYPES=typesTable.dat             # 補正する水素結合のタイプを指定
+#PARAMS=scalingParameters.dat  # specify the correct parameter file
+#D_0=0.25                  # distance at which the correction energy is maximal
+#D_MAX=0.35                # distance at which the correction energy becomes zero
+#C=1.0                     # scale factor for the correction potential
+#TYPES=typesTable.dat             # specify the hydrogen-bond types to correct
 
 
 
-# 補正エネルギーを出力
+# output the correction energy
 #PRINT ARG=@1.bias FILE=ghbfix_output STRIDE=100

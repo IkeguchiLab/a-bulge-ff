@@ -1,7 +1,7 @@
-# gHBfix-18Ab Parameters for RNA A-Bulge Motifs
+# gHBfix-18Ab Parameters for the RNA A-Bulge Motif
 
 This repository provides the final gHBfix-18Ab hydrogen-bond correction
-parameters developed for RNA A-bulge motifs and system-specific PLUMED
+parameters developed for the RNA A-bulge motif and system-specific PLUMED
 implementation examples for the MAPT pre-mRNA A-bulge system derived from
 PDB ID 6VA1 and the cUUCGg tetraloop system derived from PDB ID 2KOC.
 

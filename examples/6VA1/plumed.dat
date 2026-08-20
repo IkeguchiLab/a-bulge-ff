@@ -15,8 +15,8 @@ BIASVALUE ARG=gh
 PRINT FILE=output ARG=gh
 
 #PARAMS=scalingParameters.dat  # specify the correct parameter file
-#D_0=0.25                  # distance at which the correction energy is maximal
-#D_MAX=0.35                # distance at which the correction energy becomes zero
+#D_0=0.2                   # distance at which the correction energy is maximal
+#D_MAX=0.3                 # distance at which the correction energy becomes zero
 #C=1.0                     # scale factor for the correction potential
 #TYPES=typesTable.dat             # specify the hydrogen-bond types to correct
 
